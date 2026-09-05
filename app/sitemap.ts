@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solutions/commercial-solar",
     "/solutions/industrial-solar",
     "/solutions/institutional-solar",
+    "/financing",
     "/how-it-works",
     "/projects",
     "/about",

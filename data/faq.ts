@@ -54,6 +54,18 @@ export const faqItems: FaqItem[] = [
       "Solarwaala is based in Lucknow and serves customers across Uttar Pradesh.",
   },
   {
+    id: "government-subsidy",
+    question: "Is there a government subsidy for solar installation?",
+    answer:
+      "Yes. Residential customers can access a central government subsidy of up to ₹78,000 under the PM Surya Ghar Muft Bijli Yojana, plus an additional Uttar Pradesh state subsidy of up to ₹30,000 — subject to eligibility and current scheme terms, which we'll confirm for your specific case. See our Financing page for details.",
+  },
+  {
+    id: "solar-loan",
+    question: "Can I get a loan to finance my solar system?",
+    answer:
+      "Yes. Collateral-free bank loans are available covering up to 90% of your project cost, with rates starting around 5.75% p.a. under the PM Surya Ghar loan facility. We can help you apply.",
+  },
+  {
     id: "quote-process",
     question: "How do I get a quote?",
     answer:

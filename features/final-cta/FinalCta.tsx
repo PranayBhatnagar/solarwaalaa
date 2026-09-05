@@ -8,6 +8,7 @@ const REASSURANCES = [
   "Starts with a real site assessment",
   "Clear process from enquiry to installation",
   "Serving homes and businesses across Uttar Pradesh",
+  "Eligible for government subsidy and easy financing",
 ];
 
 /**
@@ -63,7 +64,7 @@ export function FinalCta() {
 
         <div className="rounded-card bg-white p-6 sm:p-8 shadow-2xl shadow-black/20">
           <h3 className="font-bold text-ink">Request a Consultation</h3>
-          <p className="mt-1 mb-5 text-sm text-ink/60">Takes less than a minute.</p>
+          <p className="mt-1 mb-5 text-sm text-ink/70">Takes less than a minute.</p>
           <LeadForm source="final-cta" compact />
         </div>
       </Container>

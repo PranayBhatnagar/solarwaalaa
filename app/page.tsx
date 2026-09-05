@@ -2,6 +2,7 @@ import { Hero } from "@/features/hero/Hero";
 import { ValueStrip } from "@/features/value-strip/ValueStrip";
 import { WhySolarwaala } from "@/features/why-solarwaala/WhySolarwaala";
 import { SolutionsGrid } from "@/features/solutions/SolutionsGrid";
+import { GovernmentSchemes } from "@/features/schemes/GovernmentSchemes";
 import { SolarJourney } from "@/features/process/SolarJourney";
 import { Estimator } from "@/features/estimator/Estimator";
 import { Coverage } from "@/features/coverage/Coverage";
@@ -17,6 +18,7 @@ export default function Home() {
       <ValueStrip />
       <WhySolarwaala />
       <SolutionsGrid />
+      <GovernmentSchemes />
       <SolarJourney />
       <Estimator />
       <Coverage />

@@ -37,6 +37,14 @@ export default function TermsPage() {
           site assessment.
         </p>
 
+        <h2 className="mt-4 text-lg font-bold text-ink">Government schemes &amp; financing offers</h2>
+        <p>
+          Any &ldquo;zero upfront cost,&rdquo; subsidy, or financing offer referenced on this website
+          is subject to eligibility, loan approval, and specific terms and conditions confirmed with
+          our sales team before purchase. Government subsidy amounts and bank loan terms are set by
+          third parties, may change, and are not guaranteed by {siteConfig.name}.
+        </p>
+
         <h2 className="mt-4 text-lg font-bold text-ink">Contact</h2>
         <p>
           Questions about these terms can be sent to{" "}

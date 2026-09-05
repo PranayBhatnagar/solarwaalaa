@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { MapPin } from "lucide-react";
+import Link from "next/link";
+import { MapPin, Zap } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { track } from "@/lib/analytics";
@@ -88,10 +89,20 @@ export function Hero() {
             </Button>
           </div>
 
-          <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 backdrop-blur-sm">
-            <MapPin aria-hidden="true" size={16} className="shrink-0" />
-            Based in {siteConfig.city} • {siteConfig.serviceArea}
-          </p>
+          <div className="flex flex-wrap gap-2">
+            <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 backdrop-blur-sm">
+              <MapPin aria-hidden="true" size={16} className="shrink-0" />
+              Based in {siteConfig.city} • {siteConfig.serviceArea}
+            </p>
+            <Link
+              href="/financing"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-lime/90 px-4 py-2 text-sm font-semibold text-ink hover:bg-lime"
+            >
+              <Zap aria-hidden="true" size={16} className="shrink-0" />
+              Zero Upfront Cost*
+            </Link>
+          </div>
+          <p className="text-xs text-white/60">*T&amp;C apply</p>
         </div>
       </Container>
     </section>
