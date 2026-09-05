@@ -23,8 +23,8 @@ export const siteConfig = {
   url: "https://solarwaalaa.com",
 
   contact: {
-    phone: "+91-9918901250",
-    phoneDisplay: "+91 99189 01250",
+    phone: "+91-8604256541",
+    phoneDisplay: "+91 86042 56541",
     email: "info@solarwaalaa.com",
     // No WhatsApp Business number supplied yet — omit the WhatsApp CTA and
     // the `whatsapp_click` analytics event entirely until one exists.
