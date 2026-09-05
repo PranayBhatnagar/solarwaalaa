@@ -17,7 +17,7 @@ export type PhotoCredit = {
 export const photoCredits: PhotoCredit[] = [
   {
     id: "hero",
-    usedFor: "Homepage hero",
+    usedFor: "Homepage hero slideshow (slide 1) + hero background",
     title: "Rooftop Solar panels on homes in Mehsana, Gujarat, India",
     author: "Wikimedia Commons contributor",
     source:
@@ -26,7 +26,7 @@ export const photoCredits: PhotoCredit[] = [
   },
   {
     id: "residential",
-    usedFor: "Residential solution card",
+    usedFor: "Residential solution card + homepage hero slideshow (slide 2)",
     title: "Rooftop Solar panels on homes in Mehsana, Gujarat, India (69514)",
     author: "Wikimedia Commons contributor",
     source:
@@ -35,7 +35,7 @@ export const photoCredits: PhotoCredit[] = [
   },
   {
     id: "commercial",
-    usedFor: "Commercial solution card",
+    usedFor: "Commercial solution card + homepage hero slideshow (slide 3)",
     title: "Solar panels - Hart Senate Office Building - 2015 (cropped)",
     author: "Architect of the Capitol",
     source: "https://commons.wikimedia.org/wiki/File:Solar_panels_-_Hart_Senate_Office_Building_-_2015.jpg",
@@ -43,7 +43,7 @@ export const photoCredits: PhotoCredit[] = [
   },
   {
     id: "industrial",
-    usedFor: "Industrial solution card",
+    usedFor: "Industrial solution card + homepage hero slideshow (slide 4)",
     title: "Solar farm at Krishnapuram Tatipudi Water Works, aerial view",
     author: "Wikimedia Commons contributor",
     source:
@@ -52,7 +52,7 @@ export const photoCredits: PhotoCredit[] = [
   },
   {
     id: "institutional",
-    usedFor: "Institutional solution card",
+    usedFor: "Institutional solution card + homepage hero slideshow (slide 5)",
     title: "Murray Elementary School",
     author: "U.S. Army Corps of Engineers",
     source: "https://commons.wikimedia.org/wiki/File:Murray_Elementary_School_140404-A-SL877-2016.jpg",

@@ -6,29 +6,47 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { track } from "@/lib/analytics";
 import { useQuoteDrawer } from "@/features/lead-form/QuoteDrawerContext";
+import { useSlideshow } from "@/hooks/useSlideshow";
 import { siteConfig } from "@/data/config";
+
+const SLIDES = [
+  "/images/hero/slide-1.webp",
+  "/images/hero/slide-2.webp",
+  "/images/hero/slide-3.webp",
+  "/images/hero/slide-4.webp",
+  "/images/hero/slide-5.webp",
+];
 
 /**
  * Hero (spec 5.2): full-viewport-ish desktop hero, premium solar photograph
  * with controlled contrast, eyebrow/H1/subhead/CTAs, location trust pill.
- * No carousel. Real openly-licensed photography (see /photo-credits) —
- * placeholder until Solarwaala's own project photography is available
- * (spec section 16).
+ * Background is a crossfading slideshow of real, openly-licensed photography
+ * (see /photo-credits) — placeholder until Solarwaala's own project
+ * photography is available (spec section 16). Auto-advance pauses under
+ * prefers-reduced-motion (spec section 12), showing the first slide only.
  */
 export function Hero() {
   const { open } = useQuoteDrawer();
+  const activeSlide = useSlideshow(SLIDES.length, 3000);
 
   return (
     <section className="relative isolate flex min-h-[560px] sm:min-h-[700px] lg:min-h-[820px] items-center overflow-hidden bg-deep">
-      <Image
-        src="/images/hero.webp"
-        alt=""
-        fill
-        priority
-        fetchPriority="high"
-        sizes="100vw"
-        className="object-cover"
-      />
+      {SLIDES.map((src, index) => (
+        <Image
+          key={src}
+          src={src}
+          alt=""
+          fill
+          // Only the first slide is LCP-critical; the rest load at normal
+          // priority in the background so they're ready by the time the
+          // slideshow reaches them, without competing with the first paint.
+          priority={index === 0}
+          fetchPriority={index === 0 ? "high" : "auto"}
+          sizes="100vw"
+          className="object-cover transition-opacity duration-[1200ms] ease-in-out"
+          style={{ opacity: index === activeSlide ? 1 : 0 }}
+        />
+      ))}
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/45 to-transparent"
