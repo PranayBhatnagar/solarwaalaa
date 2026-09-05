@@ -37,6 +37,9 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
     message: "",
     consent: false,
   });
+  // Honeypot: hidden from real visitors, only a bot autofills this. If set,
+  // submitLead() silently drops the submission instead of emailing it.
+  const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<FieldErrors<LeadFormFields>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [serverError, setServerError] = useState<string | null>(null);
@@ -74,7 +77,7 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
       source,
     };
 
-    const result = await submitLead(lead);
+    const result = await submitLead(lead, honeypot);
     if (result.ok) {
       setStatus("success");
       track({ name: "lead_form_submitted", props: { source: source ?? "unknown" } });
@@ -98,6 +101,20 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
 
   return (
     <form onSubmit={handleSubmit} onFocus={markStarted} noValidate className={`flex flex-col gap-4 ${className}`}>
+      {/* Honeypot — visually hidden from real users, not just display:none (some bots skip that). */}
+      <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
+        <label htmlFor={`${source}-company`}>Company</label>
+        <input
+          id={`${source}-company`}
+          name="company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+        />
+      </div>
+
       <Field label="Name" error={errors.name} htmlFor={`${source}-name`}>
         <input
           id={`${source}-name`}

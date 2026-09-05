@@ -6,23 +6,48 @@ import type { Lead } from "@/data/types";
  * later connect to CRM, email, WhatsApp or a backend without rewriting
  * form components").
  *
- * No CRM/email/backend is named in the spec, so this is a stub that
- * resolves successfully after a short delay. Replace the body of
- * `submitLead()` with a real API call/CRM integration later — every form
- * in the app already calls this one function.
+ * The site is a static export (GitHub Pages hosting, no server), so leads
+ * are delivered via Formspree — a third-party form-to-email service. Every
+ * submission is emailed to the inbox configured on the Formspree form
+ * itself (set up by the business, not stored in this codebase).
+ *
+ * `honeypot` is a hidden field (see LeadForm's `_gotcha` input) that real
+ * visitors never fill in; if a bot fills it, Formspree silently discards
+ * the submission instead of emailing it.
  */
-export async function submitLead(lead: Lead): Promise<{ ok: true } | { ok: false; error: string }> {
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xljelqrv";
+
+export async function submitLead(
+  lead: Lead,
+  honeypot?: string
+): Promise<{ ok: true } | { ok: false; error: string }> {
   try {
-    // TODO (integration): replace with a real endpoint, e.g.
-    // const res = await fetch("/api/leads", { method: "POST", body: JSON.stringify(lead) });
-    if (process.env.NODE_ENV !== "production") {
-      console.debug("[leads] submitted (stub, not sent anywhere yet):", {
-        ...lead,
-        phone: "«redacted in log»",
-        email: lead.email ? "«redacted in log»" : undefined,
-      });
+    if (honeypot) {
+      // Bot filled the hidden field — pretend success, send nothing further.
+      return { ok: true };
     }
-    await new Promise((resolve) => setTimeout(resolve, 400));
+
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        name: lead.name,
+        phone: lead.phone,
+        email: lead.email,
+        city: lead.city,
+        propertyType: lead.propertyType,
+        monthlyBill: lead.monthlyBill,
+        message: lead.message,
+        consent: lead.consent,
+        source: lead.source ?? "unknown",
+        _subject: `New Solarwaala lead — ${lead.name} (${lead.propertyType}, ${lead.city})`,
+        _replyto: lead.email || undefined,
+      }),
+    });
+
+    if (!res.ok) {
+      return { ok: false, error: "Something went wrong. Please try again or call us directly." };
+    }
     return { ok: true };
   } catch {
     return { ok: false, error: "Something went wrong. Please try again or call us directly." };
