@@ -81,6 +81,10 @@ export default function AboutPage() {
           Get in Touch
         </Button>
       </div>
+
+      <p className="text-xs text-ink/60 text-center">
+        {siteConfig.name} is operated by Achutam Estate and Wellness Pvt Ltd.
+      </p>
     </Container>
   );
 }
