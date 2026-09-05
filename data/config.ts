@@ -17,8 +17,10 @@ export const siteConfig = {
   city: "Lucknow",
   state: "Uttar Pradesh",
   serviceArea: "Serving Uttar Pradesh",
-  // Set once the production domain is known — used for canonical URLs / OG tags / sitemap.
-  url: "https://www.solarwaalaa.com",
+  // Canonical production URL — apex domain, no "www" (www.solarwaalaa.com
+  // redirects to this via DNS/GitHub Pages). Used for canonical URLs, OG
+  // tags, sitemap, and JSON-LD.
+  url: "https://solarwaalaa.com",
 
   contact: {
     phone: "+91-9918901250",
