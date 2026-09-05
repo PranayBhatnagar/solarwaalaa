@@ -76,10 +76,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="rounded-card border border-dashed border-line p-6 sm:p-8 text-center text-sm text-ink/70">
-        Additional team profiles and certifications will appear here once confirmed.
-      </div>
-
       <div className="text-center">
         <Button href="/contact" size="lg">
           Get in Touch
