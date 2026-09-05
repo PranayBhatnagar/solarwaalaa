@@ -49,7 +49,7 @@ export function SolutionsGrid({ headingAs = "h2", showHeading = true }: Solution
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={solution.image}
-                    alt=""
+                    alt={solution.imageAlt}
                     fill
                     sizes="(min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"

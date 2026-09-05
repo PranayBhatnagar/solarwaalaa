@@ -77,6 +77,11 @@ export function Footer() {
                   Terms &amp; Disclaimer
                 </Link>
               </li>
+              <li>
+                <Link href="/photo-credits" className="text-sm text-white/80 hover:text-lime">
+                  Photo Credits
+                </Link>
+              </li>
             </ul>
             {socialEntries.length > 0 ? (
               <ul className="mt-4 flex gap-3">

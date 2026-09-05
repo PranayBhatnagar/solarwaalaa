@@ -14,6 +14,7 @@ export type Solution = {
   description: string;
   outcome: string; // one-line outcome shown on the card
   image: string;
+  imageAlt: string;
   href: string;
   icon: string;
 };
