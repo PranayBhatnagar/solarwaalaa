@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -5,6 +6,7 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { buildBreadcrumbJsonLd } from "@/lib/structured-data";
 import { buildMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/data/config";
+import { founder } from "@/data/team";
 
 export const metadata = buildMetadata({
   title: "About",
@@ -15,10 +17,12 @@ export const metadata = buildMetadata({
 /**
  * /about (spec section 4/13). Only states facts that are verified
  * (Lucknow-based, Uttar Pradesh-focused) — no invented history, team bios,
- * certifications or awards (spec section 3, Non-Goals).
+ * certifications or awards (spec section 3, Non-Goals), except the
+ * Founder & CEO note below, which is real, business-supplied content
+ * (see data/team.ts).
  *
- * TODO (business): add real founding story, team bios/photos, and any
- * certifications once supplied — do not fill these with placeholder claims.
+ * TODO (business): add further team bios/photos and any certifications
+ * once supplied — do not fill these with placeholder claims.
  */
 export default function AboutPage() {
   return (
@@ -50,8 +54,30 @@ export default function AboutPage() {
         </div>
       </div>
 
+      <section className="rounded-card border border-line bg-cloud p-6 sm:p-10">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-deep">A note from our founder</h2>
+        <div className="mt-6 flex flex-col sm:flex-row gap-6 sm:gap-8 items-center sm:items-start">
+          <Image
+            src={founder.photo}
+            alt={`${founder.name}, ${founder.title} of ${siteConfig.name}`}
+            width={160}
+            height={160}
+            className="h-32 w-32 sm:h-40 sm:w-40 shrink-0 rounded-full object-cover ring-4 ring-white shadow-md"
+          />
+          <div className="flex flex-col gap-3 text-center sm:text-left">
+            <blockquote className="text-ink/80 leading-relaxed text-pretty">
+              &ldquo;{founder.note}&rdquo;
+            </blockquote>
+            <footer className="text-sm">
+              <span className="font-bold text-ink">{founder.name}</span>
+              <span className="text-ink/70"> — {founder.title}</span>
+            </footer>
+          </div>
+        </div>
+      </section>
+
       <div className="rounded-card border border-dashed border-line p-6 sm:p-8 text-center text-sm text-ink/70">
-        Team profiles and certifications will appear here once confirmed.
+        Additional team profiles and certifications will appear here once confirmed.
       </div>
 
       <div className="text-center">
