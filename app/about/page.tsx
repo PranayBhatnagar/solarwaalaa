@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { buildBreadcrumbJsonLd } from "@/lib/structured-data";
 import { buildMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/data/config";
-import { founder, director, type TeamMember } from "@/data/team";
+import { founder, directors, type TeamMember } from "@/data/team";
 
 export const metadata = buildMetadata({
   title: "About",
@@ -54,7 +54,9 @@ export default function AboutPage() {
       </div>
 
       <TeamMemberSection heading="A note from our founder" member={founder} />
-      <TeamMemberSection heading="A note from our director" member={director} />
+      {directors.map((member) => (
+        <TeamMemberSection key={member.name} heading="A note from our director" member={member} />
+      ))}
 
       <div className="text-center">
         <Button href="/contact" size="lg">

@@ -20,14 +20,35 @@ export const founder: TeamMember = {
 };
 
 /**
- * Director's paragraph is deliberately generic (business asked for
+ * Directors' paragraphs are deliberately generic (business asked for
  * placeholder-style copy here rather than specific claims) — update once
- * real background/responsibilities are supplied.
+ * real background/responsibilities are supplied for each.
+ *
+ * Photos for Reena Singh and Shiv Pratap Singh are cropped from the
+ * company's GST registration certificate (AA0902260830847_RC12032026.pdf,
+ * Annexure B — Details of Managing/Whole-time Directors and Key
+ * Managerial Persons), which is the source the business pointed to.
  */
-export const director: TeamMember = {
-  name: "Shivansu Singh",
-  title: "Director",
-  photo: "/images/team/shivansu-singh.webp",
-  note:
-    "As Director at Solarwaala, Shivansu Singh works closely with the team to keep every project moving smoothly — from the first site visit through to final commissioning. His focus is on clear communication and a dependable experience for every customer making the move to solar.",
-};
+export const directors: TeamMember[] = [
+  {
+    name: "Shivansu Singh",
+    title: "Director",
+    photo: "/images/team/shivansu-singh.webp",
+    note:
+      "As Director at Solarwaala, Shivansu Singh works closely with the team to keep every project moving smoothly — from the first site visit through to final commissioning. His focus is on clear communication and a dependable experience for every customer making the move to solar.",
+  },
+  {
+    name: "Reena Singh",
+    title: "Director",
+    photo: "/images/team/reena-singh.webp",
+    note:
+      "As Director at Solarwaala, Reena Singh supports the company's day-to-day operations and governance, helping make sure Solarwaala runs on a solid, dependable foundation as it grows across Uttar Pradesh.",
+  },
+  {
+    name: "Shiv Pratap Singh",
+    title: "Director",
+    photo: "/images/team/shiv-pratap-singh.webp",
+    note:
+      "As Director at Solarwaala, Shiv Pratap Singh brings experience and steady oversight to the company's leadership, supporting Solarwaala's mission of bringing reliable solar power to homes and businesses across Uttar Pradesh.",
+  },
+];
