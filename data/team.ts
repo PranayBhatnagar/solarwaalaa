@@ -35,20 +35,20 @@ export const directors: TeamMember[] = [
     title: "Director",
     photo: "/images/team/shivansu-singh.webp",
     note:
-      "As Director at Solarwaala, Shivansu Singh works closely with the team to keep every project moving smoothly — from the first site visit through to final commissioning. His focus is on clear communication and a dependable experience for every customer making the move to solar.",
+      "As Director at Solarwaala, Shivansu Singh works closely with the team to keep every project moving smoothly — from the first site visit through to final commissioning. He believes a good solar installation is as much about the process as it is about the panels themselves: clear communication, realistic timelines, and no surprises along the way for the customer. Whether that means coordinating with our installation crews on the ground or following up with a customer after their system goes live, his focus stays on making sure every project reflects the same standard of care, regardless of its size. As Solarwaala continues to grow across Uttar Pradesh, that consistency is what he sees as central to earning — and keeping — every customer's trust.",
   },
   {
     name: "Reena Singh",
     title: "Director",
     photo: "/images/team/reena-singh.webp",
     note:
-      "As Director at Solarwaala, Reena Singh supports the company's day-to-day operations and governance, helping make sure Solarwaala runs on a solid, dependable foundation as it grows across Uttar Pradesh.",
+      "As Director at Solarwaala, Reena Singh supports the company's day-to-day operations and governance, helping make sure Solarwaala runs on a solid, dependable foundation as it grows across Uttar Pradesh. She works to see that the systems behind the business — from compliance to internal processes — are as reliable as the solar installations Solarwaala delivers to its customers. In her view, sound governance isn't just a back-office concern; it's what allows the team on the ground to stay focused on doing right by every customer, project after project. As the company expands its reach across the state, she remains focused on keeping that foundation strong.",
   },
   {
     name: "Shiv Pratap Singh",
     title: "Director",
     photo: "/images/team/shiv-pratap-singh.webp",
     note:
-      "As Director at Solarwaala, Shiv Pratap Singh brings experience and steady oversight to the company's leadership, supporting Solarwaala's mission of bringing reliable solar power to homes and businesses across Uttar Pradesh.",
+      "As Director at Solarwaala, Shiv Pratap Singh brings experience and steady oversight to the company's leadership. He believes a business built on a mission as ambitious as bringing reliable, affordable solar power to homes and businesses across Uttar Pradesh needs an equally steady hand guiding it from behind the scenes. His role is to support that stability — helping the leadership team stay focused on long-term, sustainable growth rather than short-term shortcuts. It's a responsibility he takes seriously, knowing that every family and business Solarwaala serves is trusting the company to deliver on its promise.",
   },
 ];
