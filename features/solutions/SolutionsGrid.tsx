@@ -15,13 +15,13 @@ type SolutionsGridProps = {
 };
 
 /**
- * Solutions grid (spec 5.5): four large visual cards — image, one-line
+ * Solutions grid (spec 5.5): four large visual cards - image, one-line
  * outcome, short description, arrow. Hover: image zooms subtly, gradient
  * veil appears, arrow shifts 4-6px (durations 150-300ms per spec section 6).
  */
 export function SolutionsGrid({ headingAs = "h2", showHeading = true }: SolutionsGridProps = {}) {
   // Card titles must be one level below whatever this section's own heading
-  // renders as, so the hierarchy never skips a level (spec section 12) —
+  // renders as, so the hierarchy never skips a level (spec section 12) -
   // h1 (dedicated /solutions page) -> h2 cards; h2 (embedded, e.g. homepage) -> h3 cards.
   const CardTitle = headingAs === "h1" ? "h2" : "h3";
 

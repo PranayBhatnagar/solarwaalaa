@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 });
 
 /**
- * /contact (spec 5.13/14). No Google Maps embed — the spec doesn't name a
+ * /contact (spec 5.13/14). No Google Maps embed - the spec doesn't name a
  * maps API/key, so this uses the same stylized coverage graphic pattern
  * instead of introducing an external API dependency; swap in a real embed
  * later once an API key is available.
@@ -27,7 +27,7 @@ export default function ContactPage() {
         as="h1"
         eyebrow="Contact"
         title="Get a Quote"
-        subtitle="Share a few details and Solarwaala will get in touch to arrange a site assessment."
+        subtitle="Share a few details and Solarwaalaa will get in touch to arrange a site assessment."
         align="center"
         className="mx-auto"
       />
@@ -50,7 +50,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/70">Service Area</h2>
               <p className="mt-1 text-ink/80">
-                {siteConfig.city}, {siteConfig.state} — {siteConfig.serviceArea}
+                {siteConfig.city}, {siteConfig.state} ({siteConfig.serviceArea})
               </p>
             </div>
           </div>

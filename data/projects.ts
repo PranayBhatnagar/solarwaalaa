@@ -3,7 +3,7 @@ import type { Project } from "./types";
 /**
  * Real, verified completed-project entries only (spec section 3, Non-Goals:
  * "Do not invent installed capacity, number of projects... or years of
- * experience"). Intentionally empty at launch — the Project Showcase (5.9)
+ * experience"). Intentionally empty at launch - the Project Showcase (5.9)
  * and before/after slider components are fully built and will render
  * automatically as soon as entries are added here.
  *

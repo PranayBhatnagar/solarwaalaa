@@ -91,9 +91,9 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
   if (status === "success") {
     return (
       <div role="status" className={`rounded-card border border-line bg-cloud p-6 ${className}`}>
-        <p className="font-semibold text-ink">Thanks — we&apos;ve received your request.</p>
+        <p className="font-semibold text-ink">Thanks! We&apos;ve received your request.</p>
         <p className="mt-1 text-ink/70">
-          Solarwaala will contact you using the details provided.
+          Solarwaalaa will contact you using the details provided.
         </p>
       </div>
     );
@@ -101,7 +101,7 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
 
   return (
     <form onSubmit={handleSubmit} onFocus={markStarted} noValidate className={`flex flex-col gap-4 ${className}`}>
-      {/* Honeypot — visually hidden from real users, not just display:none (some bots skip that). */}
+      {/* Honeypot - visually hidden from real users, not just display:none (some bots skip that). */}
       <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
         <label htmlFor={`${source}-company`}>Company</label>
         <input
@@ -210,7 +210,7 @@ export function LeadForm({ source, compact = false, className = "" }: LeadFormPr
           className="mt-0.5 h-5 w-5 shrink-0 accent-action"
           aria-describedby={errors.consent ? `${source}-consent-error` : undefined}
         />
-        <span>I consent to Solarwaala contacting me about this enquiry.</span>
+        <span>I consent to Solarwaalaa contacting me about this enquiry.</span>
       </label>
       {errors.consent ? (
         <p id={`${source}-consent-error`} className="-mt-2 text-sm text-red-600">

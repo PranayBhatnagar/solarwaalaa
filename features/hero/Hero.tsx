@@ -22,7 +22,7 @@ const SLIDES = [
  * Hero (spec 5.2): full-viewport-ish desktop hero, premium solar photograph
  * with controlled contrast, eyebrow/H1/subhead/CTAs, location trust pill.
  * Background is a crossfading slideshow of real, openly-licensed photography
- * (see /photo-credits) — placeholder until Solarwaala's own project
+ * (see /photo-credits) - placeholder until Solarwaalaa's own project
  * photography is available (spec section 16). Auto-advance pauses under
  * prefers-reduced-motion (spec section 12), showing the first slide only.
  */

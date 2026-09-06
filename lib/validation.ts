@@ -14,7 +14,7 @@ export function isValidIndianPhone(value: string): boolean {
 }
 
 export function isValidEmail(value: string): boolean {
-  // Deliberately permissive — good-enough client-side check, not a full RFC validator.
+  // Deliberately permissive - good-enough client-side check, not a full RFC validator.
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 

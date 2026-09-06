@@ -6,7 +6,7 @@ import type { Project } from "@/data/types";
 
 /**
  * Shared project card, used by both the homepage Project Showcase and the
- * /projects page. Fires `project_opened` (spec 15) on click — currently a
+ * /projects page. Fires `project_opened` (spec 15) on click - currently a
  * no-op destination since no project detail view exists yet; wire a real
  * lightbox/detail page here once real project entries (with more than a
  * thumbnail) are added to data/projects.ts.

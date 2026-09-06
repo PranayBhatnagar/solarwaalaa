@@ -4,15 +4,15 @@ import { Reveal } from "@/components/ui/Reveal";
 import { proofCards } from "./proof-cards";
 
 /**
- * Why Solarwaala (spec 5.4): asymmetric split, copy on left, proof cards on
+ * Why Solarwaalaa (spec 5.4): asymmetric split, copy on left, proof cards on
  * right acting as the "visual/interactive stack". Proof values are
  * qualitative and safe-to-publish (see proof-cards.ts); numeric stats stay
- * hidden until verified (siteConfig.flags.hasProofStats — see data/config.ts).
+ * hidden until verified (siteConfig.flags.hasProofStats - see data/config.ts).
  */
 export function WhySolarwaala() {
   return (
     <section className="relative overflow-hidden py-16 sm:py-24">
-      {/* Decorative background glow — purely visual, no content. */}
+      {/* Decorative background glow - purely visual, no content. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-action/10 blur-3xl" />
         <div className="absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-eco/10 blur-3xl" />
@@ -21,7 +21,7 @@ export function WhySolarwaala() {
       <Container className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-10 lg:gap-16 items-start">
         <Reveal>
           <SectionHeading
-            eyebrow="Why Solarwaala"
+            eyebrow="Why Solarwaalaa"
             title="Clean Energy. Smart Investment. Long-Term Impact."
             subtitle="Solar is a long-term decision. We start every project with a real site assessment so your system is designed around your property, not a one-size-fits-all package."
           />

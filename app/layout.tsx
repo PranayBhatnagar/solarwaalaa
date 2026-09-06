@@ -11,7 +11,7 @@ import { buildLocalBusinessJsonLd } from "@/lib/structured-data";
 import { QuoteDrawerProvider } from "@/features/lead-form/QuoteDrawerContext";
 
 // Code-split: the drawer renders nothing until a visitor opens it, but it's
-// mounted on every route from the root layout — split it into its own
+// mounted on every route from the root layout - split it into its own
 // chunk rather than shipping it as part of every page's initial JS.
 const QuoteDrawer = dynamic(() => import("@/features/lead-form/QuoteDrawer").then((m) => m.QuoteDrawer));
 
@@ -24,7 +24,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 const defaultTitle = `${siteConfig.name} | Solar Plant Installation in Uttar Pradesh`;
 const defaultDescription =
-  "Solarwaala is a Lucknow-based solar plant installation company serving homes and businesses across Uttar Pradesh. Request a site assessment and solar consultation.";
+  "Solarwaalaa is a Lucknow-based solar plant installation company serving homes and businesses across Uttar Pradesh. Request a site assessment and solar consultation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

@@ -5,7 +5,7 @@ import { testimonials, certifications } from "@/data/testimonials";
 
 /**
  * Trust / Evidence (spec 5.11): testimonials, partner logos, certifications,
- * warranties, project counts, performance metrics — "only from verified
+ * warranties, project counts, performance metrics - "only from verified
  * source data... gracefully hide unavailable fields." Renders nothing at
  * launch since neither testimonials nor certifications are populated yet.
  */

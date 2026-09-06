@@ -6,13 +6,13 @@ import { Zap, Landmark, Building2, Percent, Wallet, type LucideIcon } from "luci
  *
  * Sourced from the September 2026 research pass against official sources
  * (pmsuryaghar.gov.in, mnre.gov.in, upnedasolarrooftopportal.com,
- * sbi.bank.in, bankofbaroda.bank.in) — see the internal research dossier.
+ * sbi.bank.in, bankofbaroda.bank.in) - see the internal research dossier.
  * These are indicative figures published by government/bank sources at
  * research time and are subject to change; re-verify before quoting a
  * figure as final to a customer (spec section 17, Content Rules).
  *
  * "Zero Upfront Cost" (featured=true) is deliberately NOT backed by a
- * verified figure the way the other four are — it's a business-side
+ * verified figure the way the other four are - it's a business-side
  * commitment communicated on the site at the founder's direction, with
  * details deferred to the sales conversation rather than published here.
  */

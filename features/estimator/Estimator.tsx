@@ -11,7 +11,7 @@ import { useQuoteDrawer } from "@/features/lead-form/QuoteDrawerContext";
  * "Could Solar Work for You?" mini qualification widget (spec 5.7 / 6).
  * Inputs: monthly bill, property type, city, optional roof area. Per spec:
  * "MVP calculates only an indicative 'request assessment' state rather than
- * a financial promise" — no ROI/savings numbers are shown or implied.
+ * a financial promise" - no ROI/savings numbers are shown or implied.
  */
 export function Estimator() {
   const [bill, setBill] = useState("");
@@ -41,7 +41,7 @@ export function Estimator() {
         <SectionHeading
           eyebrow="Quick Check"
           title="Could Solar Work for You?"
-          subtitle="Answer a few quick questions and we'll let you know whether a full site assessment is worth arranging — no financial promises, just a starting point."
+          subtitle="Answer a few quick questions and we'll let you know whether a full site assessment is worth arranging. No financial promises, just a starting point."
         />
 
         <div className="rounded-card border border-line bg-white p-6 sm:p-8">
@@ -51,7 +51,7 @@ export function Estimator() {
                 Your inputs suggest a solar assessment may be worthwhile.
               </p>
               <p className="text-sm text-ink/70">
-                The next step is a proper site assessment — request one below and Solarwaala will
+                The next step is a proper site assessment. Request one below and Solarwaalaa will
                 follow up with real numbers for your property.
               </p>
               <Button size="lg" onClick={() => open("estimator")} className="w-full sm:w-auto">

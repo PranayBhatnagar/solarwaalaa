@@ -9,7 +9,7 @@ import { projects } from "@/data/projects";
 
 export const metadata = buildMetadata({
   title: "Projects",
-  description: "Verified Solarwaala solar installations across Uttar Pradesh.",
+  description: "Verified Solarwaalaa solar installations across Uttar Pradesh.",
   path: "/projects",
 });
 

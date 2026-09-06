@@ -14,7 +14,7 @@ type RevealProps = {
 /**
  * Scroll-reveal wrapper (fade + slight rise) used across sections.
  * Content is present in static HTML regardless (spec 5.6: "keep content
- * accessible in static HTML") — only the transition is animated, and it's
+ * accessible in static HTML") - only the transition is animated, and it's
  * skipped entirely under prefers-reduced-motion (spec section 12).
  */
 export function Reveal({ children, as: As = "div", className = "", delayMs = 0 }: RevealProps) {

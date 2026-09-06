@@ -1,11 +1,11 @@
 import type { FaqItem } from "./types";
 
 /**
- * Launch FAQ content per spec section 5.12 — covers: system types, site
+ * Launch FAQ content per spec section 5.12 - covers: system types, site
  * assessment, on/off-grid/hybrid basics, maintenance, timeline,
  * documentation, service area, quote process. Deliberately avoids specific
  * subsidy amounts/eligibility rules, warranty terms, or savings figures
- * (spec section 17, Content Rules) — those require verification against
+ * (spec section 17, Content Rules) - those require verification against
  * current official sources before publication.
  *
  * TODO (business): have these answers reviewed before launch (spec 5.12).
@@ -13,9 +13,9 @@ import type { FaqItem } from "./types";
 export const faqItems: FaqItem[] = [
   {
     id: "system-types",
-    question: "What kind of solar systems does Solarwaala install?",
+    question: "What kind of solar systems does Solarwaalaa install?",
     answer:
-      "We work across on-grid (grid-tied), off-grid and hybrid solar systems for residential, commercial, industrial and institutional properties. The right type depends on your electricity usage, grid connection and backup needs — we help you decide after a site assessment.",
+      "We work across on-grid (grid-tied), off-grid and hybrid solar systems for residential, commercial, industrial and institutional properties. The right type depends on your electricity usage, grid connection and backup needs, and we help you decide after a site assessment.",
   },
   {
     id: "site-assessment",
@@ -33,7 +33,7 @@ export const faqItems: FaqItem[] = [
     id: "maintenance",
     question: "How much maintenance does a solar system need?",
     answer:
-      "Solar systems generally need periodic panel cleaning and occasional inspection of wiring, mounting and inverter performance. Exact maintenance needs depend on your system design and local conditions — this is covered as part of your system handover.",
+      "Solar systems generally need periodic panel cleaning and occasional inspection of wiring, mounting and inverter performance. Exact maintenance needs depend on your system design and local conditions. This is covered as part of your system handover.",
   },
   {
     id: "timeline",
@@ -49,15 +49,15 @@ export const faqItems: FaqItem[] = [
   },
   {
     id: "service-area",
-    question: "Where does Solarwaala operate?",
+    question: "Where does Solarwaalaa operate?",
     answer:
-      "Solarwaala is based in Lucknow and serves customers across Uttar Pradesh.",
+      "Solarwaalaa is based in Lucknow and serves customers across Uttar Pradesh.",
   },
   {
     id: "government-subsidy",
     question: "Is there a government subsidy for solar installation?",
     answer:
-      "Yes. Residential customers can access a central government subsidy of up to ₹78,000 under the PM Surya Ghar Muft Bijli Yojana, plus an additional Uttar Pradesh state subsidy of up to ₹30,000 — subject to eligibility and current scheme terms, which we'll confirm for your specific case. See our Financing page for details.",
+      "Yes. Residential customers can access a central government subsidy of up to ₹78,000 under the PM Surya Ghar Muft Bijli Yojana, plus an additional Uttar Pradesh state subsidy of up to ₹30,000, subject to eligibility and current scheme terms, which we'll confirm for your specific case. See our Financing page for details.",
   },
   {
     id: "solar-loan",
@@ -69,6 +69,6 @@ export const faqItems: FaqItem[] = [
     id: "quote-process",
     question: "How do I get a quote?",
     answer:
-      "Share a few basic details through the \"Get a Quote\" form — your property type, city and approximate electricity bill. We'll follow up to arrange a proper site assessment before providing a firm quote.",
+      "Share a few basic details through the \"Get a Quote\" form: your property type, city and approximate electricity bill. We'll follow up to arrange a proper site assessment before providing a firm quote.",
   },
 ];

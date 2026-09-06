@@ -7,7 +7,7 @@ import { ProjectCard } from "./ProjectCard";
 
 /**
  * Project Showcase (spec 5.9). Fully built against the `Project` type, but
- * gated on `siteConfig.flags.hasProjects` — renders nothing on the homepage
+ * gated on `siteConfig.flags.hasProjects` - renders nothing on the homepage
  * until real, verified project entries exist in data/projects.ts (spec
  * section 3: "Do not invent... number of projects"). The dedicated
  * /projects page (Phase 4) shows a "coming soon" state instead of hiding

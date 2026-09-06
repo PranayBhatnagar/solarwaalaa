@@ -21,7 +21,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Image
               src="/logo/solarwaala-logo.png"
-              alt="Solarwaala"
+              alt="Solarwaalaa"
               width={168}
               height={58}
               // self-start: without it, the flex-col parent's default

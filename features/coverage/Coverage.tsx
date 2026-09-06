@@ -9,10 +9,10 @@ import { serviceLocations } from "@/data/locations";
 
 /**
  * Uttar Pradesh Coverage (spec 5.8): a real, geographically-accurate map of
- * Uttar Pradesh (public/images/up-map.svg — traced from an open-licensed
+ * Uttar Pradesh (public/images/up-map.svg - traced from an open-licensed
  * state outline, see /photo-credits) with sequenced pulse-on-first-view
  * nodes at each city's actual position. Hover/focus reveals "Serving this
- * region" — never a claim of offices/completed projects in that city (spec
+ * region" - never a claim of offices/completed projects in that city (spec
  * 3 / 5.8). Includes a textual list equivalent for the map image (spec
  * section 12: "Map/canvas visuals must have a textual equivalent").
  */
@@ -26,7 +26,7 @@ export function Coverage() {
         <SectionHeading
           eyebrow="Coverage"
           title="Lucknow Based. Uttar Pradesh Focused."
-          subtitle="Solarwaala is based in Lucknow and works with residential, commercial, industrial and institutional customers across Uttar Pradesh."
+          subtitle="Solarwaalaa is based in Lucknow and works with residential, commercial, industrial and institutional customers across Uttar Pradesh."
         />
 
         <div ref={ref} className="relative mx-auto aspect-square w-full max-w-md">
@@ -64,7 +64,7 @@ export function Coverage() {
                     onMouseLeave={() => setActiveId((id) => (id === loc.id ? null : id))}
                     onFocus={() => setActiveId(loc.id)}
                     onBlur={() => setActiveId((id) => (id === loc.id ? null : id))}
-                    aria-label={`${loc.city} — serving this region`}
+                    aria-label={`${loc.city}, serving this region`}
                     className="relative flex h-6 w-6 items-center justify-center rounded-full focus-visible:outline-action"
                   >
                     <span
@@ -80,7 +80,7 @@ export function Coverage() {
                       aria-hidden="true"
                       className="absolute left-1/2 top-full mt-1 w-max -translate-x-1/2 rounded-control bg-ink px-2.5 py-1 text-xs text-white shadow-lg"
                     >
-                      {loc.city} — serving this region
+                      {loc.city}, serving this region
                     </span>
                   ) : null}
                 </div>
@@ -92,7 +92,7 @@ export function Coverage() {
         {/* Textual equivalent of the map image, for assistive tech / SEO. */}
         <ul className="sr-only">
           {serviceLocations.map((loc) => (
-            <li key={loc.id}>{loc.city} — serving this region</li>
+            <li key={loc.id}>{loc.city}, serving this region</li>
           ))}
         </ul>
       </Container>

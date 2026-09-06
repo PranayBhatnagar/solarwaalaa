@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 
 /**
  * Value Strip (spec 5.3): four compact benefits with a simple icon + 1-2
- * lines. Titles are bold text, not headings — this strip sits directly
+ * lines. Titles are bold text, not headings - this strip sits directly
  * after the Hero's H1 with no H2 in between, so giving it heading elements
  * would skip a level (spec section 12: logical heading hierarchy).
  */

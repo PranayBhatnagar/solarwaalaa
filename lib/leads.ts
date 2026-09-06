@@ -7,7 +7,7 @@ import type { Lead } from "@/data/types";
  * form components").
  *
  * The site is a static export (GitHub Pages hosting, no server), so leads
- * are delivered via Formspree — a third-party form-to-email service. Every
+ * are delivered via Formspree - a third-party form-to-email service. Every
  * submission is emailed to the inbox configured on the Formspree form
  * itself (set up by the business, not stored in this codebase).
  *
@@ -23,7 +23,7 @@ export async function submitLead(
 ): Promise<{ ok: true } | { ok: false; error: string }> {
   try {
     if (honeypot) {
-      // Bot filled the hidden field — pretend success, send nothing further.
+      // Bot filled the hidden field - pretend success, send nothing further.
       return { ok: true };
     }
 
@@ -40,7 +40,7 @@ export async function submitLead(
         message: lead.message,
         consent: lead.consent,
         source: lead.source ?? "unknown",
-        _subject: `New Solarwaala lead — ${lead.name} (${lead.propertyType}, ${lead.city})`,
+        _subject: `New Solarwaalaa lead: ${lead.name} (${lead.propertyType}, ${lead.city})`,
         _replyto: lead.email || undefined,
       }),
     });

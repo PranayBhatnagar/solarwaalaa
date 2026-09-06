@@ -9,7 +9,7 @@ const base =
   "min-h-[44px] focus-visible:outline-none disabled:opacity-50 disabled:pointer-events-none";
 
 // Action Blue (#0D8BFF) reads beautifully as an accent but only hits ~3.4:1
-// against white — short of WCAG AA's 4.5:1 for normal-size text/button fills
+// against white - short of WCAG AA's 4.5:1 for normal-size text/button fills
 // (confirmed by Lighthouse). Deep Solar Blue (#0A4FB3) is the same brand
 // family at ~7.5:1, so it's used wherever brand-blue carries text/fill
 // contrast; Action Blue stays for hover states, borders, and decorative use.
@@ -37,7 +37,7 @@ type ButtonAsButton = CommonProps &
 type ButtonAsLink = CommonProps &
   AnchorHTMLAttributes<HTMLAnchorElement> & { href: string };
 
-/** Shared CTA control — renders a <button> or, when given `href`, a Next <Link>. */
+/** Shared CTA control - renders a <button> or, when given `href`, a Next <Link>. */
 export function Button({
   variant = "primary",
   size = "md",

@@ -15,7 +15,7 @@ type AnimatedCounterProps = {
 
 /**
  * Count-up-on-view metric. Counts up only while visible and only ever
- * displays a value the caller supplies (never fabricates one) — callers
+ * displays a value the caller supplies (never fabricates one) - callers
  * are responsible for gating this behind verified data (see
  * data/config.ts flags). Reduced-motion users see the final value
  * immediately, no animation.
@@ -32,7 +32,7 @@ export function AnimatedCounter({
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    // Reduced-motion users see the final value immediately — handled by
+    // Reduced-motion users see the final value immediately - handled by
     // the render below, not by writing state here.
     if (!inView || reduced) return;
 

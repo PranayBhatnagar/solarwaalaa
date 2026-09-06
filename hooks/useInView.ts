@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 type Options = {
-  /** Fire once and stop observing (default true) — cheap for reveal/counter animations. */
+  /** Fire once and stop observing (default true) - cheap for reveal/counter animations. */
   once?: boolean;
   threshold?: number;
   rootMargin?: string;
@@ -35,7 +35,7 @@ export function useInView<T extends HTMLElement>({
     if (!node) return;
 
     if (!supportsIntersectionObserver) {
-      // Fail open (visible) for browsers without IntersectionObserver —
+      // Fail open (visible) for browsers without IntersectionObserver -
       // deferred so we're not setting state synchronously in the effect body.
       const frame = requestAnimationFrame(() => setInView(true));
       return () => cancelAnimationFrame(frame);

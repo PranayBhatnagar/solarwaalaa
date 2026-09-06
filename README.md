@@ -1,6 +1,6 @@
-# Solarwaala
+# Solarwaalaa
 
-Marketing/lead-generation website for **Solarwaala**, a Lucknow-based solar plant
+Marketing/lead-generation website for **Solarwaalaa**, a Lucknow-based solar plant
 installation company serving customers across Uttar Pradesh.
 
 Built with Next.js (App Router) + TypeScript + Tailwind CSS, implemented against a
@@ -21,18 +21,18 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Project conventions
 
-- `data/config.ts` — central business-facts config (phone/email/social/feature flags).
+- `data/config.ts`: central business-facts config (phone/email/social/feature flags).
   Flip `flags.hasProjects` / `hasTestimonials` once real, verified data exists in
-  `data/projects.ts` / `data/testimonials.ts` — those sections stay hidden until then.
-- `data/` — typed content (solutions, projects, testimonials, FAQ, service locations).
-- `features/` — page sections, one folder per feature.
-- `components/ui/` — shared primitives (Button, Accordion, ModalDrawer, etc.).
-- `lib/analytics.ts` / `lib/leads.ts` — typed abstractions ready to wire to a real
+  `data/projects.ts` / `data/testimonials.ts`, those sections stay hidden until then.
+- `data/`: typed content (solutions, projects, testimonials, FAQ, service locations).
+- `features/`: page sections, one folder per feature.
+- `components/ui/`: shared primitives (Button, Accordion, ModalDrawer, etc.).
+- `lib/analytics.ts` / `lib/leads.ts`: typed abstractions ready to wire to a real
   analytics provider / CRM without touching call sites.
 
 ## Scripts
 
-- `npm run dev` — start the dev server
-- `npm run build` — production build
-- `npm run start` — run the production build
-- `npm run lint` — ESLint
+- `npm run dev`: start the dev server
+- `npm run build`: production build
+- `npm run start`: run the production build
+- `npm run lint`: ESLint

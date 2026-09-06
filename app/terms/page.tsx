@@ -31,8 +31,8 @@ export default function TermsPage() {
 
         <h2 className="mt-4 text-lg font-bold text-ink">Indicative information only</h2>
         <p>
-          Figures, estimates and outcomes shown or discussed on this website — including anything
-          produced by the &ldquo;Could Solar Work for You?&rdquo; check — are indicative only.
+          Figures, estimates and outcomes shown or discussed on this website, including anything
+          produced by the &ldquo;Could Solar Work for You?&rdquo; check, are indicative only.
           Final system sizing, pricing and expected performance are confirmed only after a formal
           site assessment.
         </p>

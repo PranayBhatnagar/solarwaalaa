@@ -2,7 +2,7 @@ import { siteConfig } from "@/data/config";
 
 /**
  * JSON-LD builders (spec section 13): "Use Organization / LocalBusiness /
- * Service structured data — only for facts that are true and supplied."
+ * Service structured data - only for facts that are true and supplied."
  * Every field here is either a static, verifiable fact (name, city, state,
  * URL) or pulled from data/config.ts, and null contact fields are omitted
  * rather than filled with placeholders.

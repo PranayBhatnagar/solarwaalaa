@@ -12,7 +12,7 @@ export const journeySteps = [
   {
     number: "03",
     title: "Design",
-    body: "Your system is sized and engineered around what the assessment finds — not a generic package.",
+    body: "Your system is sized and engineered around what the assessment finds, not a generic package.",
   },
   {
     number: "04",

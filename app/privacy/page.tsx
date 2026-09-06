@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
 /**
  * Placeholder privacy policy (spec section 18: "Privacy... present before
  * public launch"). TODO (business): have legal counsel review and finalize
- * this content before public launch — do not publish as-is.
+ * this content before public launch - do not publish as-is.
  */
 export default function PrivacyPage() {
   return (

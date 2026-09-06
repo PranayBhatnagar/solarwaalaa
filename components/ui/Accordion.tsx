@@ -16,7 +16,7 @@ type AccordionProps = {
 
 /**
  * Accessible accordion for the FAQ section (spec 5.12). Native
- * button + aria-expanded/aria-controls pattern — fully keyboard operable,
+ * button + aria-expanded/aria-controls pattern - fully keyboard operable,
  * no hidden-behind-hover content (spec section 12).
  */
 export function Accordion({ items, onOpen, className = "" }: AccordionProps) {

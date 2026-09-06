@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 });
 
 /**
- * /financing — customer-facing summary of government subsidy schemes and
+ * /financing - customer-facing summary of government subsidy schemes and
  * loan/financing options, based on the September 2026 research pass
  * against official sources (see data/schemes.ts). Figures are indicative
  * and were correct as of research time; scheme terms and interest rates
@@ -31,12 +31,12 @@ export default function FinancingPage() {
         as="h1"
         eyebrow="Government Schemes & Financing"
         title="Solar Is More Affordable Than You Think"
-        subtitle="Central government subsidy, an additional Uttar Pradesh state subsidy, and collateral-free bank loans — here's how they add up."
+        subtitle="Central government subsidy, an additional Uttar Pradesh state subsidy, and collateral-free bank loans. Here's how they add up."
         align="center"
         className="mx-auto"
       />
 
-      {/* Zero Upfront Cost — brief, by design; full details are handled by our sales team. */}
+      {/* Zero Upfront Cost - brief, by design; full details are handled by our sales team. */}
       <section className="rounded-card border border-eco/40 bg-gradient-to-br from-eco/10 to-lime/10 p-6 sm:p-10 text-center flex flex-col items-center gap-4">
         <span aria-hidden="true" className="flex h-14 w-14 items-center justify-center rounded-full bg-eco text-white">
           <Zap size={26} strokeWidth={2} />
@@ -58,7 +58,7 @@ export default function FinancingPage() {
           <Landmark size={22} strokeWidth={2} />
         </span>
         <div className="flex flex-col gap-3">
-          <h2 className="text-xl font-bold text-ink">Central Government Subsidy — PM Surya Ghar Muft Bijli Yojana</h2>
+          <h2 className="text-xl font-bold text-ink">Central Government Subsidy: PM Surya Ghar Muft Bijli Yojana</h2>
           <p className="text-ink/70 leading-relaxed">
             Residential rooftop solar customers can access a central government subsidy of up to{" "}
             <strong className="text-ink">₹78,000</strong>, structured as ₹30,000/kW for the first 2kW and
@@ -91,7 +91,7 @@ export default function FinancingPage() {
           <p className="text-ink/70 leading-relaxed">
             On top of the central subsidy, Uttar Pradesh offers an additional state subsidy of{" "}
             <strong className="text-ink">₹15,000 per kW, capped at ₹30,000 per consumer</strong>, for
-            private residential rooftop solar — paid on a reimbursement basis after installation and
+            private residential rooftop solar, paid on a reimbursement basis after installation and
             net-metering commissioning, via UPNEDA (the state&apos;s nodal renewable energy agency).
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function FinancingPage() {
       <div className="rounded-card border border-dashed border-line p-6 text-center text-sm text-ink/70">
         Figures above are indicative, based on published government and bank sources, and are subject
         to change. Final eligibility, subsidy amounts, and loan terms are confirmed at the time of
-        application — our team will walk you through your specific numbers.
+        application. Our team will walk you through your specific numbers.
       </div>
 
       <div className="text-center">

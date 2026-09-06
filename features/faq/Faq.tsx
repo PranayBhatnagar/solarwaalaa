@@ -6,7 +6,7 @@ import { Accordion } from "@/components/ui/Accordion";
 import { track } from "@/lib/analytics";
 import { faqItems } from "@/data/faq";
 
-/** FAQ accordion (spec 5.12) — 6-10 launch questions, see data/faq.ts for content/review notes. */
+/** FAQ accordion (spec 5.12) - 6-10 launch questions, see data/faq.ts for content/review notes. */
 export function Faq() {
   return (
     <section className="py-16 sm:py-24 bg-cloud">

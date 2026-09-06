@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 /**
  * Returns 0-1 scroll progress through a given element (or the whole
  * document if no ref supplied). Backs the "Solar Ray Scroll Progress" motif
- * and the Solar Journey progress line (spec section 6) — must not cause
+ * and the Solar Journey progress line (spec section 6) - must not cause
  * layout shift or block content, so it only ever reads scroll position.
  */
 export function useScrollProgress(target?: React.RefObject<HTMLElement | null>) {

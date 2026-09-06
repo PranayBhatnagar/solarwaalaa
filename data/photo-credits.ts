@@ -1,6 +1,6 @@
 /**
  * Attribution for real photography sourced from Wikimedia Commons (spec
- * section 16 — "licensed/commercial images... do not copy another
+ * section 16 - "licensed/commercial images... do not copy another
  * company's images"). All images here are under open licenses that permit
  * commercial use; CC BY-SA entries require attribution, which this file
  * feeds to the /photo-credits page linked from the footer.

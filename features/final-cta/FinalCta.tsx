@@ -18,7 +18,7 @@ const REASSURANCES = [
 export function FinalCta() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-deep to-ink py-16 sm:py-24">
-      {/* Decorative glow — purely visual, matches the "Why Solarwaala" treatment. */}
+      {/* Decorative glow - purely visual, matches the "Why Solarwaalaa" treatment. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-action/20 blur-3xl" />
         <div className="absolute -right-16 -bottom-24 h-80 w-80 rounded-full bg-eco/20 blur-3xl" />
@@ -29,7 +29,7 @@ export function FinalCta() {
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Ready to explore solar?</h2>
             <p className="text-white/80 max-w-md">
-              Share a few details and Solarwaala will get in touch to arrange a site assessment.
+              Share a few details and Solarwaalaa will get in touch to arrange a site assessment.
             </p>
           </div>
 

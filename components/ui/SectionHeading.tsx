@@ -9,7 +9,7 @@ type SectionHeadingProps = {
 
 /**
  * Consistent section-heading pattern reused across the homepage and inner
- * pages. Exactly one <h1> should exist per page (spec section 12) — pass
+ * pages. Exactly one <h1> should exist per page (spec section 12) - pass
  * `as="h1"` only on the page's single primary heading (the Hero).
  */
 export function SectionHeading({

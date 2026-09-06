@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Static export — GitHub Pages serves plain HTML/CSS/JS, no Node.js server.
+  // Static export - GitHub Pages serves plain HTML/CSS/JS, no Node.js server.
   output: "export",
 
   // Only relevant for a project-page URL (username.github.io/repo/); the

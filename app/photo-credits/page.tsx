@@ -14,7 +14,7 @@ export default function PhotoCreditsPage() {
       <h1 className="text-3xl sm:text-4xl font-bold text-ink">Photo Credits</h1>
       <p className="text-ink/70 leading-relaxed">
         Real project photography is not yet available, so this site uses openly licensed photographs
-        from Wikimedia Commons as placeholders until Solarwaala&apos;s own installation photos are
+        from Wikimedia Commons as placeholders until Solarwaalaa&apos;s own installation photos are
         ready. Attribution below.
       </p>
       <ul className="flex flex-col gap-5">

@@ -6,9 +6,9 @@ import { schemeStats } from "@/data/schemes";
 
 /**
  * Government Schemes & Financing (homepage teaser). Full detail lives on
- * /financing — this section is a short, attention-grabbing summary, not
+ * /financing - this section is a short, attention-grabbing summary, not
  * the complete breakdown (spec-style: indicative figures, verify before
- * quoting — see data/schemes.ts).
+ * quoting - see data/schemes.ts).
  */
 export function GovernmentSchemes() {
   return (
@@ -17,7 +17,7 @@ export function GovernmentSchemes() {
         <SectionHeading
           eyebrow="Government Schemes & Financing"
           title="The Government Wants You on Solar. Here's What That's Worth."
-          subtitle="Central and Uttar Pradesh state subsidies, plus collateral-free bank loans — solar is more affordable than most people realize."
+          subtitle="Central and Uttar Pradesh state subsidies, plus collateral-free bank loans. Solar is more affordable than most people realize."
           align="center"
           className="mx-auto"
         />

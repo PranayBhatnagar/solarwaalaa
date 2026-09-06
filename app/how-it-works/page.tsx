@@ -8,7 +8,7 @@ import { EnergyFlow } from "@/features/process/EnergyFlow";
 
 export const metadata = buildMetadata({
   title: "How It Works",
-  description: "How a Solarwaala solar installation works, from initial enquiry to commissioning.",
+  description: "How a Solarwaalaa solar installation works, from initial enquiry to commissioning.",
   path: "/how-it-works",
 });
 

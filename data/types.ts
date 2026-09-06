@@ -30,7 +30,7 @@ export type Project = {
   completionDate?: string;
   image: string;
   alt: string;
-  beforeImage?: string; // for the before/after slider — only when real photos exist
+  beforeImage?: string; // for the before/after slider - only when real photos exist
 };
 
 export type Lead = {
@@ -42,7 +42,7 @@ export type Lead = {
   monthlyBill?: number;
   message?: string;
   consent: boolean;
-  /** Which on-page entry point produced this lead — for analytics only, no PII. */
+  /** Which on-page entry point produced this lead - for analytics only, no PII. */
   source?: "header" | "hero" | "estimator" | "final-cta" | "contact-page";
 };
 

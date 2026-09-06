@@ -16,12 +16,12 @@ export const metadata = buildMetadata({
 
 /**
  * /about (spec section 4/13). Only states facts that are verified
- * (Lucknow-based, Uttar Pradesh-focused) — no invented history,
+ * (Lucknow-based, Uttar Pradesh-focused) - no invented history,
  * certifications or awards (spec section 3, Non-Goals), except the team
  * notes below, which are real, business-supplied content (see data/team.ts).
  *
  * TODO (business): add further team bios/photos and any certifications
- * once supplied — do not fill these with placeholder claims.
+ * once supplied - do not fill these with placeholder claims.
  */
 export default function AboutPage() {
   return (
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="rounded-card border border-line bg-white p-6 sm:p-8">
           <h2 className="font-bold text-ink">How we work</h2>
           <p className="mt-3 text-ink/70 leading-relaxed">
-            Every project starts with a site assessment rather than a generic package — we look at
+            Every project starts with a site assessment rather than a generic package. We look at
             your roof or available area, shading, electrical setup and usage before recommending a
             system design.
           </p>
@@ -87,7 +87,7 @@ function TeamMemberSection({ heading, member }: { heading: string; member: TeamM
           <blockquote className="text-ink/80 leading-relaxed text-pretty">&ldquo;{member.note}&rdquo;</blockquote>
           <footer className="text-sm">
             <span className="font-bold text-ink">{member.name}</span>
-            <span className="text-ink/70"> — {member.title}</span>
+            <span className="text-ink/70"> - {member.title}</span>
           </footer>
         </div>
       </div>

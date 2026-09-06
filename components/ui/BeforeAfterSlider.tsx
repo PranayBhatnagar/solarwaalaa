@@ -13,7 +13,7 @@ type BeforeAfterSliderProps = {
 
 /**
  * Roof-before / system-after comparison slider (spec section 6): "for real
- * projects only". Keyboard accessible via a native range input — arrow
+ * projects only". Keyboard accessible via a native range input - arrow
  * keys move the reveal point, no drag-only interaction.
  */
 export function BeforeAfterSlider({

@@ -1,7 +1,7 @@
 import type { Certification, Testimonial } from "./types";
 
 /**
- * Real customer testimonials and certifications only — empty at launch.
+ * Real customer testimonials and certifications only - empty at launch.
  * The Trust/Evidence section (spec 5.11) is fully built and gated by
  * `siteConfig.flags.hasTestimonials` / `hasCertifications` in data/config.ts,
  * so it renders nothing (rather than a fabricated placeholder) until real

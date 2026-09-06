@@ -12,7 +12,7 @@ import { useQuoteDrawer } from "@/features/lead-form/QuoteDrawerContext";
 import { NAV_LINKS } from "./nav-links";
 
 // Code-split: renders nothing until the mobile menu button is pressed, and
-// is irrelevant on desktop viewports entirely — no need in every route's
+// is irrelevant on desktop viewports entirely - no need in every route's
 // initial JS.
 const MobileNav = dynamic(() => import("./MobileNav").then((m) => m.MobileNav), { ssr: false });
 
@@ -41,10 +41,10 @@ export function Header() {
       }`}
     >
       <Container className="flex h-16 sm:h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 min-h-[44px]" aria-label="Solarwaala home">
+        <Link href="/" className="flex items-center gap-2 min-h-[44px]" aria-label="Solarwaalaa home">
           <Image
             src="/logo/solarwaala-logo.png"
-            alt="Solarwaala"
+            alt="Solarwaalaa"
             width={168}
             height={58}
             priority

@@ -15,7 +15,7 @@ type SolarJourneyProps = {
  * Solar Journey (spec 5.6): four-step flow, horizontal on desktop, vertical
  * on mobile, with a progress-line animation tied to scroll. All step
  * content is always present in static HTML (spec: "keep content accessible
- * in static HTML") — only the fill-line animates, and it's frozen at 100%
+ * in static HTML") - only the fill-line animates, and it's frozen at 100%
  * for reduced-motion users rather than skipped.
  */
 export function SolarJourney({ headingAs = "h2" }: SolarJourneyProps = {}) {
@@ -24,7 +24,7 @@ export function SolarJourney({ headingAs = "h2" }: SolarJourneyProps = {}) {
   const reduced = useReducedMotion();
   const fill = reduced ? 1 : progress;
   // Step titles must be one level below this section's own heading, so the
-  // hierarchy never skips a level (spec section 12) — h1 (dedicated
+  // hierarchy never skips a level (spec section 12) - h1 (dedicated
   // /how-it-works page) -> h2 steps; h2 (embedded, e.g. homepage) -> h3 steps.
   const StepTitle = headingAs === "h1" ? "h2" : "h3";
 
